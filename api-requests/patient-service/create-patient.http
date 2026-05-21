@@ -1,0 +1,13 @@
+### crete a new patient entity
+POST http://localhost:4000/patients
+Content-Type:application/json
+
+{
+  "name": "Dummy",
+  "email": "",
+  "dateOfBirth": "2020-02-02",
+  "address": "dummy address",
+  "registeredDate": "2026-04-07"
+}
+
+###

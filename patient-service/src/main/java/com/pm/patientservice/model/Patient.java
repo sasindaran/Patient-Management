@@ -14,6 +14,9 @@ public class Patient {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
 
+    @NotNull
+    private LocalDate registeredDate;
+
     public UUID getId() {
         return id;
     }
@@ -67,4 +70,8 @@ public class Patient {
 
     @NotNull
     private LocalDate dateOfBirth;
+
+    public void setRegisteredDate(@NotNull LocalDate registeredDate) {
+        this.registeredDate = registeredDate;
+    }
 }
